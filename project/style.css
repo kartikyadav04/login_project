@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:molu;
+}
+.montserrat-molu{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+  }
+
+  body{
+    width: 100vw;
+    height: 100vh;
+    background: url(./pic/cai-fang-keFnVoiwcaM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: changebg 10s linear;
+  }
+  section {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+  }
+  .box{
+    position: absolute;
+    height: 80px;
+    width: 130px;
+    background-color: rgba(214, 197, 197, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    font-family: monospace;
+    font-style: italic;
+    top: 0;
+    left: 0;
+    align-items: start;
+    animation-name: anibox;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes anibox {
+    from{
+      translate: 0%;
+    }
+    to{
+      translate: 90vw;
+    }
+  }
+  .box>p{
+    color: #000;
+  }  
+  
+  .container{
+    width: 300px;
+    height: 500px;
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px);
+    border-radius: 13px;
+    border: 3px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  h2{
+     text-transform: uppercase;
+     color: #758694;
+     font-size: 2em;
+     padding: 40px 0px;
+
+  }
+  .form_group{
+    position: relative;
+    border-bottom: 3px solid white;
+
+    width: 270px;
+    margin: 30px 0px;
+  }
+  .form_group input{
+     width: 100%;
+     height: 40px;
+     background: transparent;
+     border: none;
+     outline: none;
+     font-size: 1.2em;
+     color: white;
+     padding: 0px 50px 0px 12px;
+  }
+   .form_group label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #EEEDEB;
+    transition: 0.5s;
+
+   }
+   input:focus~label,
+   input:valid~label{
+    top: -5px;
+   }
+   p{
+    text-align: center;
+    color: azure;
+    padding: 10px 0px;
+    
+   }
+   p>a{
+    text-decoration: none;
+    color: bisque;
+    font-weight: 600px;
+    margin: 10px;
+
+   }
+   p>a:hover{
+    text-decoration: underline;
+    font-style: italic;
+   }
+   #btn{
+          width: 100%;
+          height: 40px;
+          border-radius: 40px;
+          border: none;
+          font-size: 1.2em;
+          text-transform: uppercase;
+          font-weight: 500;
+          margin: 10px 0;
+          cursor: pointer;
+          transition: 0.5s;
+   }
+  #btn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: blanchedalmond;
+  }
+  
